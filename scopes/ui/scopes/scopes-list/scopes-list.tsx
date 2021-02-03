@@ -13,9 +13,10 @@ export type ScopeListProps = {
 export const ScopeList = ({ list, className, ...rest }: ScopeListProps) => {
   return (
     <div className={classNames(styles.scopeList, className)} {...rest}>
-      {list.map((scope, index) => (
-        <ScopeCard key={index} name={scope.name} amount={scope.amount} />
-      ))}
+      {list.length > 0 &&
+        list.map((scope, index) => (
+          <ScopeCard key={index} name={scope.name} amount={scope.amount} />
+        ))}
     </div>
   );
 };

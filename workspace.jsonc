@@ -32,6 +32,7 @@
       "dependencies": {
         "@babel/runtime": "7.12.13",
         "@teambit/base-ui.elements.label": "0.6.3",
+        "@teambit/base-ui.input.error": "0.6.3",
         "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
         "@teambit/base-ui.surfaces.card": "0.6.3",
         "@teambit/base-ui.text.heading": "0.6.3",
