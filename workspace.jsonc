@@ -1,0 +1,78 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://docs.bit.dev/configuration
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "MFE demo",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "mfe.scopes"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@teambit/base-ui.elements.label": "0.6.3",
+        "@teambit/base-ui.surfaces.card": "0.6.3",
+        "@teambit/base-ui.text.heading": "0.6.3",
+        "@teambit/base-ui.text.paragraph": "0.6.3",
+        "@teambit/base-ui.theme.theme-provider": "0.6.3",
+        "@testing-library/react": "^10.4.7",
+        "@types/chai": "^4.2.11",
+        "@types/classnames": "2.2.11",
+        "@types/jest": "26.0.20",
+        "@types/react": "17.0.1",
+        "@types/react-dom": "17.0.0",
+        "chai": "^4.2.0",
+        "classnames": "2.2.6",
+        "jest": "26.6.3"
+      },
+      "peerDependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+      }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your workspace.
+   * this is extremely useful for upgrading, aligning and building components with a
+   * new set of dependencies.
+   **/
+  "teambit.workspace/variants": {
+    /**
+     * "*" is a special rule which applied on all components in the workspace.
+     **/
+    "*": {
+      /**
+       * uncomment to apply the react environment on all components.
+       **/
+      "teambit.react/react": {}
+    },
+    "string": {
+      "defaultScope": "mfe.toolbox"
+    }
+  }
+}
