@@ -6,11 +6,6 @@
         "rootDir": "hooks/use-scopes",
         "exported": false
     },
-    "models/scope-descriptor": {
-        "mainFile": "index.ts",
-        "rootDir": "models/scope-descriptor",
-        "exported": false
-    },
     "string/capitalize": {
         "mainFile": "index.ts",
         "rootDir": "string/capitalize",

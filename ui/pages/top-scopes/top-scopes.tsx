@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { Header } from '@mfe/scopes.ui.top-scopes.header';
 import { ScopeList } from '@mfe/scopes.ui.scopes.scopes-list';
 import { capitalize } from '@mfe/toolbox.string.capitalize';
+import { useScopes } from '@mfe/scopes.hooks.use-scopes';
 import styles from './top-scopes.module.scss';
 
 export type TopScopesProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 export const TopScopes = ({ className, ...rest }: TopScopesProps) => {
-  const scopes = [
-    { name: 'teambit.base-ui', amount: '50' },
-    { name: 'teambit.evangelist', amount: '40' },
-    { name: 'teambit.evangelist', amount: '40' },
-  ];
+  const [getScopes, scopes, isLoading, error] = useScopes();
+
+  useEffect(() => {
+    getScopes();
+  }, []);
 
   return (
     <div className={classNames(styles.topScopes, classNames)} {...rest}>
