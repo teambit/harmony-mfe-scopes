@@ -6,7 +6,6 @@ export const useScopes = (): [Promise<void>, any, boolean, string] => {
   const [error, setError] = useState('');
 
   const getScopes = async () => {
-    // if (!imdbID) return;
     setIsLoading(true);
     try {
       // NEED TO ADD AWAIT
