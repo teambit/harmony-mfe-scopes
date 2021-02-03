@@ -3,7 +3,7 @@ import { GraphqlUI, GraphqlAspect } from '@teambit/graphql';
 import { PreviewRuntime } from '@teambit/preview';
 import { ReactAspect, ReactPreview } from '@teambit/react';
 import { SymphonyReactConfig, SymphonyReactAspect } from './mfe-react.aspect';
-import { Theme } from '@teambit/base-ui.theme.theme-provider';
+import { ThemeContext } from '@teambit/documenter.theme.theme-context';
 
 export class SymphonyReactPreview {
   constructor(private config: SymphonyReactConfig) {}
@@ -33,6 +33,7 @@ export class SymphonyReactPreview {
         // creating a new instance of the Bit graphQL provider with my URL.
         return graphql.getProvider({ client, children });
       },
+      ThemeContext,
     ]);
 
     return symphonyReactPreview;

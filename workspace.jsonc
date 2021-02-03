@@ -18,7 +18,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "mfe.scopes"
+    "defaultScope": "harmony-mfe.scopes"
   },
   /**
    * main configuration for component dependency resolution.
@@ -31,11 +31,12 @@
     "policy": {
       "dependencies": {
         "@teambit/base-ui.elements.label": "0.6.3",
+        "@teambit/base-ui.input.error": "0.6.3",
         "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
         "@teambit/base-ui.surfaces.card": "0.6.3",
         "@teambit/base-ui.text.heading": "0.6.3",
         "@teambit/base-ui.text.paragraph": "0.6.3",
-        "@teambit/base-ui.theme.theme-provider": "0.6.3",
+        "@teambit/documenter.theme.theme-context": "3.0.6",
         "@teambit/scopes.scope-descriptor": "0.0.5",
         "@testing-library/react": "^10.4.7",
         "@types/chai": "^4.2.11",
@@ -69,7 +70,7 @@
       "teambit.dependencies/dependency-resolver": {
         "policy": {}
       },
-      "defaultScope": "mfe.envs"
+      "defaultScope": "harmony-mfe.envs"
     },
     /**
      * "*" is a special rule which applied on all components in the workspace.
@@ -78,10 +79,10 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "mfe.envs/mfe-react": {}
+      "harmony-mfe.envs/mfe-react": {}
     },
     "string": {
-      "defaultScope": "mfe.toolbox"
+      "defaultScope": "harmony-mfe.toolbox"
     }
   }
 }
