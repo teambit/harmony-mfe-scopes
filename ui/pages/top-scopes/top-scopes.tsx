@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import classNames from 'classnames';
+import { LoaderRibbon } from '@teambit/base-ui.loaders.loader-ribbon';
 import { Header } from '@mfe/scopes.ui.top-scopes.header';
 import { ScopeList } from '@mfe/scopes.ui.scopes.scopes-list';
 import { capitalize } from '@mfe/toolbox.string.capitalize';
@@ -11,9 +12,9 @@ export type TopScopesProps = {} & React.HTMLAttributes<HTMLDivElement>;
 export const TopScopes = ({ className, ...rest }: TopScopesProps) => {
   const [getScopes, scopes, isLoading, error] = useScopes();
 
-  useEffect(() => {
-    getScopes();
-  }, []);
+  // useEffect(() => {
+  //   getScopes();
+  // }, []);
 
   return (
     <div className={classNames(styles.topScopes, classNames)} {...rest}>
@@ -23,6 +24,7 @@ export const TopScopes = ({ className, ...rest }: TopScopesProps) => {
           'these are the public scopes with most components'
         )}
       />
+      <LoaderRibbon active={isLoading} />
       <ScopeList list={scopes} />
     </div>
   );

@@ -6,6 +6,11 @@
         "rootDir": "hooks/use-scopes",
         "exported": false
     },
+    "mfe-react": {
+        "mainFile": "index.ts",
+        "rootDir": "envs/mfe-react",
+        "exported": false
+    },
     "string/capitalize": {
         "mainFile": "index.ts",
         "rootDir": "string/capitalize",

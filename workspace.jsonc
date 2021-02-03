@@ -31,6 +31,7 @@
     "policy": {
       "dependencies": {
         "@teambit/base-ui.elements.label": "0.6.3",
+        "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
         "@teambit/base-ui.surfaces.card": "0.6.3",
         "@teambit/base-ui.text.heading": "0.6.3",
         "@teambit/base-ui.text.paragraph": "0.6.3",
@@ -63,6 +64,13 @@
    * new set of dependencies.
    **/
   "teambit.workspace/variants": {
+    "envs": {
+      "teambit.harmony/aspect": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {}
+      },
+      "defaultScope": "mfe.envs"
+    },
     /**
      * "*" is a special rule which applied on all components in the workspace.
      **/
@@ -70,7 +78,7 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "teambit.react/react": {}
+      "mfe.envs/mfe-react": {}
     },
     "string": {
       "defaultScope": "mfe.toolbox"
