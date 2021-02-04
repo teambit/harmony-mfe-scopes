@@ -31,7 +31,6 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@babel/runtime": "7.12.13",
         "@teambit/base-ui.elements.label": "0.6.3",
         "@teambit/base-ui.input.error": "0.6.3",
         "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
@@ -47,7 +46,6 @@
         "@types/jest": "26.0.20",
         "@types/react": "17.0.1",
         "@types/react-dom": "17.0.0",
-        "chai": "^4.2.0",
         "classnames": "2.2.6",
         "jest": "26.6.3",
         "reset-css": "5.0.1"
