@@ -12,7 +12,6 @@ importers:
       '@teambit/base-ui.theme.theme-provider': registry.npmjs.org/@teambit/base-ui.theme.theme-provider/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.2.11
       '@teambit/scopes.scope-descriptor': 0.0.5
-      '@types/chai': registry.npmjs.org/@types/chai/4.2.14
       '@types/react-dom': registry.npmjs.org/@types/react-dom/16.9.10
       classnames: registry.npmjs.org/classnames/2.2.6
       core-js: registry.npmjs.org/core-js/3.8.3
@@ -42,7 +41,6 @@ importers:
       '@teambit/harmony': 0.2.11
       '@teambit/scopes.scope-descriptor': 0.0.5
       '@testing-library/react': ^10.4.9
-      '@types/chai': ^4.2.14
       '@types/classnames': 2.2.11
       '@types/jest': ~26.0.20
       '@types/node': ^12.19.16
@@ -327,8 +325,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/parser/-/parser-7.12.14.tgz'
     version: 7.12.14
-  registry.npmjs.org/@babel/plugin-syntax-async-generators/7.8.4_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-async-generators/7.8.4_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -355,8 +353,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-bigint/-/plugin-syntax-bigint-7.8.3.tgz'
     version: 7.8.3
-  registry.npmjs.org/@babel/plugin-syntax-class-properties/7.12.13_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-class-properties/7.12.13_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -369,8 +367,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-class-properties/-/plugin-syntax-class-properties-7.12.13.tgz'
     version: 7.12.13
-  registry.npmjs.org/@babel/plugin-syntax-import-meta/7.10.4_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-import-meta/7.10.4_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -383,8 +381,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-import-meta/-/plugin-syntax-import-meta-7.10.4.tgz'
     version: 7.10.4
-  registry.npmjs.org/@babel/plugin-syntax-json-strings/7.8.3_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-json-strings/7.8.3_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -397,8 +395,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-json-strings/-/plugin-syntax-json-strings-7.8.3.tgz'
     version: 7.8.3
-  registry.npmjs.org/@babel/plugin-syntax-logical-assignment-operators/7.10.4_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-logical-assignment-operators/7.10.4_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -411,8 +409,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-logical-assignment-operators/-/plugin-syntax-logical-assignment-operators-7.10.4.tgz'
     version: 7.10.4
-  registry.npmjs.org/@babel/plugin-syntax-nullish-coalescing-operator/7.8.3_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-nullish-coalescing-operator/7.8.3_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -425,8 +423,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-nullish-coalescing-operator/-/plugin-syntax-nullish-coalescing-operator-7.8.3.tgz'
     version: 7.8.3
-  registry.npmjs.org/@babel/plugin-syntax-numeric-separator/7.10.4_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-numeric-separator/7.10.4_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -439,8 +437,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-numeric-separator/-/plugin-syntax-numeric-separator-7.10.4.tgz'
     version: 7.10.4
-  registry.npmjs.org/@babel/plugin-syntax-object-rest-spread/7.8.3_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-object-rest-spread/7.8.3_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -453,8 +451,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-object-rest-spread/-/plugin-syntax-object-rest-spread-7.8.3.tgz'
     version: 7.8.3
-  registry.npmjs.org/@babel/plugin-syntax-optional-catch-binding/7.8.3_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-optional-catch-binding/7.8.3_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -467,8 +465,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-optional-catch-binding/-/plugin-syntax-optional-catch-binding-7.8.3.tgz'
     version: 7.8.3
-  registry.npmjs.org/@babel/plugin-syntax-optional-chaining/7.8.3_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-optional-chaining/7.8.3_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -481,8 +479,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@babel/plugin-syntax-optional-chaining/-/plugin-syntax-optional-chaining-7.8.3.tgz'
     version: 7.8.3
-  registry.npmjs.org/@babel/plugin-syntax-top-level-await/7.12.13_@babel+core@7.12.13:
-    dependencies:
+  ? registry.npmjs.org/@babel/plugin-syntax-top-level-await/7.12.13_@babel+core@7.12.13
+  : dependencies:
       '@babel/core': registry.npmjs.org/@babel/core/7.12.13
       '@babel/helper-plugin-utils': registry.npmjs.org/@babel/helper-plugin-utils/7.12.13
     dev: false
@@ -858,8 +856,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@sinonjs/fake-timers/-/fake-timers-6.0.1.tgz'
     version: 6.0.1
-  registry.npmjs.org/@teambit/base-ui.css-components.elevation/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.css-components.elevation/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -873,8 +871,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.css-components.elevation/-/base-ui.css-components.elevation-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.css-components.roundness/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.css-components.roundness/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -888,8 +886,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.css-components.roundness/-/base-ui.css-components.roundness-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.elements.label/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.elements.label/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       classnames: registry.npmjs.org/classnames/2.2.6
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
@@ -904,8 +902,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.elements.label/-/base-ui.elements.label-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.input.error/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.input.error/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       classnames: registry.npmjs.org/classnames/2.2.6
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
@@ -920,8 +918,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.input.error/-/base-ui.input.error-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.loaders.loader-ribbon/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.loaders.loader-ribbon/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       classnames: registry.npmjs.org/classnames/2.2.6
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
@@ -936,8 +934,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.loaders.loader-ribbon/-/base-ui.loaders.loader-ribbon-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.surfaces.background/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.surfaces.background/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -951,8 +949,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.surfaces.background/-/base-ui.surfaces.background-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.surfaces.card/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.surfaces.card/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       '@teambit/base-ui.css-components.elevation': registry.npmjs.org/@teambit/base-ui.css-components.elevation/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.css-components.roundness': registry.npmjs.org/@teambit/base-ui.css-components.roundness/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.surfaces.background': registry.npmjs.org/@teambit/base-ui.surfaces.background/0.6.3_react-dom@16.14.0+react@16.14.0
@@ -970,8 +968,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.surfaces.card/-/base-ui.surfaces.card-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.text.heading/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.text.heading/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -985,8 +983,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.text.heading/-/base-ui.text.heading-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.text.paragraph/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.text.paragraph/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       '@teambit/base-ui.theme.sizes': registry.npmjs.org/@teambit/base-ui.theme.sizes/0.6.3_react-dom@16.14.0+react@16.14.0
       classnames: registry.npmjs.org/classnames/2.2.6
       react: registry.npmjs.org/react/16.14.0
@@ -1002,8 +1000,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.text.paragraph/-/base-ui.text.paragraph-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.brand-definition/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.brand-definition/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       '@teambit/base-ui.theme.colors': registry.npmjs.org/@teambit/base-ui.theme.colors/0.6.3_react-dom@16.14.0+react@16.14.0
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
@@ -1018,8 +1016,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.brand-definition/-/base-ui.theme.brand-definition-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.color-definition/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.color-definition/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       '@teambit/base-ui.theme.colors': registry.npmjs.org/@teambit/base-ui.theme.colors/0.6.3_react-dom@16.14.0+react@16.14.0
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
@@ -1034,8 +1032,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.color-definition/-/base-ui.theme.color-definition-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.colors/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.colors/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -1049,8 +1047,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.colors/-/base-ui.theme.colors-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.fonts.book/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.fonts.book/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -1064,8 +1062,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.fonts.book/-/base-ui.theme.fonts.book-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -1079,8 +1077,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/-/base-ui.theme.fonts.roboto-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.heading-margin-definition/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.heading-margin-definition/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -1094,8 +1092,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.heading-margin-definition/-/base-ui.theme.heading-margin-definition-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.shadow-definition/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.shadow-definition/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -1109,8 +1107,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.shadow-definition/-/base-ui.theme.shadow-definition-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.size-definition/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.size-definition/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -1124,8 +1122,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.size-definition/-/base-ui.theme.size-definition-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.sizes/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.sizes/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       react: registry.npmjs.org/react/16.14.0
       react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
     dev: false
@@ -1139,8 +1137,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@teambit/base-ui.theme.sizes/-/base-ui.theme.sizes-0.6.3.tgz'
     version: 0.6.3
-  registry.npmjs.org/@teambit/base-ui.theme.theme-provider/0.6.3_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@teambit/base-ui.theme.theme-provider/0.6.3_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       '@teambit/base-ui.theme.brand-definition': registry.npmjs.org/@teambit/base-ui.theme.brand-definition/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.color-definition': registry.npmjs.org/@teambit/base-ui.theme.color-definition/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.fonts.book': registry.npmjs.org/@teambit/base-ui.theme.fonts.book/0.6.3_react-dom@16.14.0+react@16.14.0
@@ -1196,8 +1194,8 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@testing-library/dom/-/dom-7.29.4.tgz'
     version: 7.29.4
-  registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0:
-    dependencies:
+  ? registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
+  : dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.13
       '@testing-library/dom': registry.npmjs.org/@testing-library/dom/7.29.4
       react: registry.npmjs.org/react/16.14.0
@@ -1268,14 +1266,6 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.11.0.tgz'
     version: 7.11.0
-  registry.npmjs.org/@types/chai/4.2.14:
-    dev: false
-    name: '@types/chai'
-    resolution:
-      integrity: sha512-G+ITQPXkwTrslfG5L/BksmbLUA0M1iybEsmCWPqzSxsRRhJZimBKJkoMi8fr/CPygPTj4zO5pJH7I2/cm9M7SQ==
-      registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/chai/-/chai-4.2.14.tgz'
-    version: 4.2.14
   registry.npmjs.org/@types/classnames/2.2.11:
     dev: true
     name: '@types/classnames'
