@@ -8,5 +8,5 @@ import {capitalize} from './capitalize';
 Capitalize example:
 
 ```js live
-capitalize('foo');
+<div>example = {capitalize('example')}</div>
 ```

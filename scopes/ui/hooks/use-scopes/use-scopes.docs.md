@@ -3,4 +3,20 @@ labels: ['react', 'hooks', 'scopes']
 description: 'A React hooks to get scope data.'
 ---
 
-The hooks gives you the public scopes with most components.
+import { useEffect } from 'react';
+import { useScopes } from './use-scopes';
+
+The hooks gives you the public scopes with most components.  
+How to use:
+
+```js live
+() => {
+  const [getScopes, scopes, isLoading, error] = useScopes();
+
+  useEffect(() => {
+    getScopes();
+  }, []);
+
+  return <div>{JSON.stringify(scopes)}</div>;
+};
+```

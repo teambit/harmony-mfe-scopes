@@ -13,6 +13,7 @@ importers:
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.2.11
       '@teambit/scopes.scope-descriptor': 0.0.5
       '@types/chai': registry.npmjs.org/@types/chai/4.2.14
+      '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
       '@types/react-dom': registry.npmjs.org/@types/react-dom/16.9.10
       classnames: registry.npmjs.org/classnames/2.2.6
       core-js: registry.npmjs.org/core-js/3.8.3
@@ -22,9 +23,8 @@ importers:
       reset-css: registry.npmjs.org/reset-css/5.0.1
     devDependencies:
       '@testing-library/react': registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
-      '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
-      '@types/node': registry.npmjs.org/@types/node/12.19.15
+      '@types/node': registry.npmjs.org/@types/node/12.19.16
       '@types/react': registry.npmjs.org/@types/react/16.9.43
       '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.7
     specifiers:
@@ -43,7 +43,7 @@ importers:
       '@types/chai': ^4.2.14
       '@types/classnames': 2.2.11
       '@types/jest': ~26.0.20
-      '@types/node': ^12.19.15
+      '@types/node': ^12.19.16
       '@types/react': 16.9.43
       '@types/react-dom': 16.9.10
       '@types/react-router-dom': ^5.1.7
@@ -63,10 +63,7 @@ importers:
   hooks/use-scopes:
     specifiers: {}
   scopes/envs/mfe-react:
-    devDependencies:
-      '@types/react': registry.npmjs.org/@types/react/16.9.10
-    specifiers:
-      '@types/react': 16.9.10
+    specifiers: {}
   scopes/hooks/use-scopes:
     devDependencies:
       '@types/react': registry.npmjs.org/@types/react/17.0.1
@@ -818,7 +815,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3
       '@types/istanbul-reports': registry.npmjs.org/@types/istanbul-reports/3.0.0
-      '@types/node': registry.npmjs.org/@types/node/12.19.15
+      '@types/node': registry.npmjs.org/@types/node/12.19.16
       '@types/yargs': registry.npmjs.org/@types/yargs/15.0.13
       chalk: registry.npmjs.org/chalk/4.1.0
     engines:
@@ -1268,7 +1265,7 @@ packages:
       tarball: 'https://registry.npmjs.org/@types/chai/-/chai-4.2.14.tgz'
     version: 4.2.14
   registry.npmjs.org/@types/classnames/2.2.11:
-    dev: true
+    dev: false
     name: '@types/classnames'
     resolution:
       integrity: sha512-2koNhpWm3DgWRp5tpkiJ8JGc1xTn2q0l+jUNUE7oMKXUf5NpI9AIdC4kbjGNFBdHtcxBD18LAksoudAVhFKCjw==
@@ -1329,13 +1326,13 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/jest/-/jest-26.0.20.tgz'
     version: 26.0.20
-  registry.npmjs.org/@types/node/12.19.15:
+  registry.npmjs.org/@types/node/12.19.16:
     name: '@types/node'
     resolution:
-      integrity: sha512-lowukE3GUI+VSYSu6VcBXl14d61Rp5hA1D+61r16qnwC0lYNSqdxcvRh0pswejorHfS+HgwBasM8jLXz0/aOsw==
+      integrity: sha512-7xHmXm/QJ7cbK2laF+YYD7gb5MggHIIQwqyjin3bpEGiSuvScMQ5JZZXPvRipi1MwckTQbJZROMns/JxdnIL1Q==
       registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/node/-/node-12.19.15.tgz'
-    version: 12.19.15
+      tarball: 'https://registry.npmjs.org/@types/node/-/node-12.19.16.tgz'
+    version: 12.19.16
   registry.npmjs.org/@types/node/14.14.23:
     dev: false
     name: '@types/node'
@@ -1400,17 +1397,6 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/react-router/-/react-router-5.1.11.tgz'
     version: 5.1.11
-  registry.npmjs.org/@types/react/16.9.10:
-    dependencies:
-      '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
-      csstype: registry.npmjs.org/csstype/2.6.14
-    dev: true
-    name: '@types/react'
-    resolution:
-      integrity: sha512-J1sinqwBCzazC+DOmbwRc96pNf0KBOVkefV5DVfLX9qiHdltfFH2BUqc36UYcYSU5tIrZtaaVMAx4JwOq5/Q/g==
-      registry: 'https://node.bit.dev/'
-      tarball: 'https://registry.npmjs.org/@types/react/-/react-16.9.10.tgz'
-    version: 16.9.10
   registry.npmjs.org/@types/react/16.9.43:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
