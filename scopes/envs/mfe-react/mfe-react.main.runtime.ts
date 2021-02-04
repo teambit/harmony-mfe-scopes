@@ -4,12 +4,15 @@ import { ReactAspect, ReactMain } from '@teambit/react';
 import { SymphonyReactAspect } from './mfe-react.aspect';
 
 export class SymphonyReactMain {
+  constructor(
+    private react: ReactMain
+  ) {}
 
   /**
    * override the tsconfig.
    */
-  overrideTsConfig() {
-
+  overrideTsConfig(tsconfig: any) {
+    this.react.overrideTsConfig(tsconfig);
   }
 
   static runtime = MainRuntime;
@@ -19,7 +22,7 @@ export class SymphonyReactMain {
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
     const symphonyReactEnv = envs.compose(react.reactEnv, []);
     envs.registerEnv(symphonyReactEnv);
-    return new SymphonyReactMain();
+    return new SymphonyReactMain(react);
   }
 }
 

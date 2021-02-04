@@ -23,9 +23,9 @@
   /**
    * configure the env to use localhost on the development workspace.
    **/
-  "harmony-mfe.scopes/envs/mfe-react": {
-    "symphonyGatewayUrl": "localhost:5000"
-  },
+  // "harmony-mfe.scopes/envs/mfe-react": {
+  //   "symphonyGatewayUrl": "localhost:5000"
+  // },
   /**
    * main configuration for component dependency resolution.
    **/
