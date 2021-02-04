@@ -5,7 +5,7 @@ export type ScopeDescriptorProps = {
   },
   description: string,
   componentCount: number,
-  visibility: boolean,
+  visibility?: boolean,
 };
 
 export class ScopeDescriptor {
@@ -13,7 +13,7 @@ export class ScopeDescriptor {
     readonly id: string,
     readonly description: string,
     readonly componentCount: number,
-    readonly visibility: boolean,
+    readonly visibility?: boolean,
   ) {}
 
   toObject() {

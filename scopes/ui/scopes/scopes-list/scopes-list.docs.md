@@ -4,15 +4,16 @@ description: 'List of scope-card component.'
 ---
 
 import { ScopeList } from './scopes-list';
+import { mockScopeDescriptor } from '@harmony-mfe/scopes.scope-descriptor';
 
 Scope list example:
 
 ```js live
 () => {
   const scopes = [
-    { name: 'teambit.base-ui', amount: '50' },
-    { name: 'teambit.evangelist', amount: '40' },
-    { name: 'teambit.evangelist', amount: '40' },
+    mockScopeDescriptor({ id: { scopeName: 'ripple-ci', owner: 'teambit' } }),
+    mockScopeDescriptor({ id: { scopeName: 'base-ui', owner: 'teambit' } }),
+    mockScopeDescriptor({ id: { scopeName: 'people', owner: 'teambit' } }),
   ];
 
   return <ScopeList list={scopes} />;
