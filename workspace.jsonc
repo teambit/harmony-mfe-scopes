@@ -48,7 +48,7 @@
         "@testing-library/react": "^10.4.7",
         "@types/classnames": "2.2.11",
         "@types/jest": "26.0.20",
-        "@types/react": "16.9.10",
+        "@types/react": "16.9.43",
         "@types/react-dom": "16.9.10",
         "classnames": "2.2.6",
         "graphql-tag": "2.11.0",
