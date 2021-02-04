@@ -6,9 +6,9 @@
         "rootDir": "scopes/envs/mfe-react",
         "exported": false
     },
-    "hooks/use-scopes": {
+    "ui/hooks/use-scopes": {
         "mainFile": "index.ts",
-        "rootDir": "scopes/hooks/use-scopes",
+        "rootDir": "scopes/ui/hooks/use-scopes",
         "exported": false
     },
     "string/capitalize": {

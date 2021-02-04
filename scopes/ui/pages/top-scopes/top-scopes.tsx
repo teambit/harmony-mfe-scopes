@@ -5,7 +5,7 @@ import { Error } from '@teambit/base-ui.input.error';
 import { Header } from '@harmony-mfe/scopes.ui.top-scopes.header';
 import { ScopeList } from '@harmony-mfe/scopes.ui.scopes.scopes-list';
 import { capitalize } from '@harmony-mfe/toolbox.string.capitalize';
-import { useScopes } from '@harmony-mfe/scopes.hooks.use-scopes';
+import { useScopes } from '@harmony-mfe/scopes.ui.hooks.use-scopes';
 import styles from './top-scopes.module.scss';
 
 export type TopScopesProps = {} & React.HTMLAttributes<HTMLDivElement>;

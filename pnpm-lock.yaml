@@ -74,6 +74,8 @@ importers:
       '@types/react': registry.npmjs.org/@types/react/17.0.1
     specifiers:
       '@types/react': 17.0.1
+  scopes/ui/hooks/use-scopes:
+    specifiers: {}
   scopes/ui/pages/top-scopes:
     specifiers: {}
   scopes/ui/scopes/scope-card:
