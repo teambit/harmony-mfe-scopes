@@ -44,8 +44,7 @@
         "@types/chai": "^4.2.11",
         "@types/classnames": "2.2.11",
         "@types/jest": "26.0.20",
-        "@types/react": "17.0.1",
-        "@types/react-dom": "17.0.0",
+        "@types/react": "16.9.43",
         "classnames": "2.2.6",
         "jest": "26.6.3",
         "reset-css": "5.0.1"

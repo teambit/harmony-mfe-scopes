@@ -15,9 +15,9 @@ export class SymphonyReactPreview {
     return this.config.symphonyGatewayUrl;
   }
 
-  static runtime = PreviewRuntime;
+  static runtime: any = PreviewRuntime;
 
-  static dependencies = [ReactAspect, GraphqlAspect];
+  static dependencies: any = [ReactAspect, GraphqlAspect];
 
   static async provider(
     [react, graphql]: [ReactPreview, GraphqlUI],
