@@ -77,12 +77,7 @@
      **/
     "{envs/*}": {
       "propagate": false,
-      "teambit.harmony/aspect": {},
-      "teambit.dependencies/dependency-resolver": {
-        "policy": {
-          "dependencies": {}
-        }
-      }
+      "teambit.harmony/aspect": {}
     },
     /**
      * configure all components namespaced with "ui" with the custom mfe-react extension

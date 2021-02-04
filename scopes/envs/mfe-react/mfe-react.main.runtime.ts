@@ -4,6 +4,14 @@ import { ReactAspect, ReactMain } from '@teambit/react';
 import { SymphonyReactAspect } from './mfe-react.aspect';
 
 export class SymphonyReactMain {
+
+  /**
+   * override the tsconfig.
+   */
+  overrideTsConfig() {
+
+  }
+
   static runtime = MainRuntime;
 
   static dependencies = [ReactAspect, EnvsAspect];

@@ -1,0 +1,47 @@
+---
+description: 'A standard React component development environment for MFEs'
+labels: ['react', 'typescript', 'env', 'extension', 'example']
+---
+
+## Overview
+
+A standard React development environment for building modular and reusable MFEs.
+
+### Usage instructions
+
+Create a **variant** in project's `workspace.json` file.  
+Set this extension as the variant's extension.
+
+```json
+{
+   "teambit.workspace/variants": {
+     "{ui/*}": {
+       "harmony-mfe.scopes/envs/mfe-react": {}
+     }
+   }
+}
+```
+
+### Theming
+This environment adds the design theme [Theme](https://bit.dev/harmony-mfe/design/theme-context) tp all compositions of the components that use this example env.
+
+### Data fetching
+This environment configures the bit.dev API gateway for all compositions by default.
+Gateway URL can be modified on the local workspace for development purposes.  
+Set this configuration in `workspace.json` to set a different gateway URL:
+
+```json
+{
+  "harmony-mfe.scopes/envs/mfe-react": {
+    "symphonyGatewayUrl": "localhost:5000"
+  },
+}
+```
+
+### Compilation
+By default, Component compilation is done with the TypeScript compiler. Target format is `ES2015` which
+supports execution from both NodeJS and browser runtimes for server-side rendering.
+
+### Testing
+
+
