@@ -79,16 +79,7 @@
      **/
     "{envs/*}": {
       "propagate": false,
-      "teambit.harmony/aspect": {},
-      "teambit.dependencies/dependency-resolver": {
-        "policy": {
-          "dependencies": {
-            "@teambit/base-ui.theme.fonts.roboto": "0.6.3",
-            "@teambit/base-ui.theme.theme-provider": "0.6.3",
-            "reset-css": "5.0.1"
-          }
-        }
-      }
+      "teambit.harmony/aspect": {}
     },
     /**
      * configure all components namespaced with "ui" with the custom mfe-react extension
