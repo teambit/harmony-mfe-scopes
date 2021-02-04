@@ -40,7 +40,6 @@
         "@teambit/base-ui.theme.theme-provider": "0.6.3",
         "@teambit/scopes.scope-descriptor": "0.0.5",
         "@testing-library/react": "^10.4.7",
-        "@types/chai": "^4.2.11",
         "@types/classnames": "2.2.11",
         "@types/jest": "26.0.20",
         "@types/react": "16.9.10",
