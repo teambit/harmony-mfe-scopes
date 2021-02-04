@@ -24,7 +24,7 @@ importers:
       '@testing-library/react': registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
       '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
-      '@types/node': registry.npmjs.org/@types/node/12.19.15
+      '@types/node': registry.npmjs.org/@types/node/12.19.16
       '@types/react': registry.npmjs.org/@types/react/16.9.43
       '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.7
     specifiers:
@@ -43,7 +43,7 @@ importers:
       '@types/chai': ^4.2.14
       '@types/classnames': 2.2.11
       '@types/jest': ~26.0.20
-      '@types/node': ^12.19.15
+      '@types/node': ^12.19.16
       '@types/react': 16.9.43
       '@types/react-dom': 16.9.10
       '@types/react-router-dom': ^5.1.7
@@ -85,7 +85,10 @@ importers:
   string/capitalize:
     specifiers: {}
   toolbox/string/capitalize:
-    specifiers: {}
+    devDependencies:
+      '@types/react': registry.npmjs.org/@types/react/16.9.10
+    specifiers:
+      '@types/react': 16.9.10
   ui/pages/top-scopes:
     specifiers: {}
   ui/scopes/scope-card:
@@ -1336,6 +1339,14 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/@types/node/-/node-12.19.15.tgz'
     version: 12.19.15
+  registry.npmjs.org/@types/node/12.19.16:
+    dev: true
+    name: '@types/node'
+    resolution:
+      integrity: sha512-7xHmXm/QJ7cbK2laF+YYD7gb5MggHIIQwqyjin3bpEGiSuvScMQ5JZZXPvRipi1MwckTQbJZROMns/JxdnIL1Q==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/@types/node/-/node-12.19.16.tgz'
+    version: 12.19.16
   registry.npmjs.org/@types/node/14.14.23:
     dev: false
     name: '@types/node'
