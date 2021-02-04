@@ -1,1 +1,1 @@
-export { ScopeDescriptor } from './scope-descriptor';
+export { ScopeDescriptor, ScopeDescriptorProps } from './scope-descriptor';

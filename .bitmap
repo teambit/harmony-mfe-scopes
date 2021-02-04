@@ -33,5 +33,10 @@
         "mainFile": "index.ts",
         "rootDir": "toolbox/string/capitalize"
     },
+    "scope-descriptor": {
+        "mainFile": "index.ts",
+        "rootDir": "scopes/scope-descriptor",
+        "exported": false
+    },
     "version": "14.8.9-dev.284"
 }

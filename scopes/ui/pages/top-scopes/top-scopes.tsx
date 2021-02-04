@@ -11,11 +11,8 @@ import styles from './top-scopes.module.scss';
 export type TopScopesProps = {} & React.HTMLAttributes<HTMLDivElement>;
 
 export const TopScopes = ({ className, ...rest }: TopScopesProps) => {
-  const [getScopes, scopes, isLoading, error] = useScopes();
-
-  useEffect(() => {
-    getScopes();
-  }, []);
+  const scopes = useScopes(['teambit']);
+  if (!scopes.length) return <LoaderRibbon active={true} />
 
   return (
     <div className={classNames(styles.topScopes, classNames)} {...rest}>
@@ -25,8 +22,7 @@ export const TopScopes = ({ className, ...rest }: TopScopesProps) => {
           'these are the public scopes with most components'
         )}
       />
-      <LoaderRibbon active={isLoading} />
-      {error !== '' ? <Error>{error}</Error> : <ScopeList list={scopes} />}
+      <ScopeList list={scopes} />
     </div>
   );
 };

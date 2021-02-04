@@ -1,25 +1,30 @@
-import { useState } from 'react';
+import { useDataQuery } from '@teambit/ui';
+import { ScopeDescriptor } from '@harmony-mfe/scopes.scope-descriptor';
+import gql from 'graphql-tag';
 
-export const useScopes = (): [() => void, any, boolean, string] => {
-  const [scopes, setScopes] = useState({});
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
-
-  const getScopes = () => {
-    setIsLoading(true);
-    try {
-      const data = [
-        { name: 'teambit.base-ui', amount: '50' },
-        { name: 'teambit.evangelist', amount: '40' },
-        { name: 'teambit.evangelist', amount: '40' },
-      ];
-      setScopes(data);
-      if (error) setError('');
-      setIsLoading(false);
-    } catch (err) {
-      setError(err.toString());
-      setIsLoading(false);
+const SEARCH_SCOPES = gql`
+  query SearchScopes($owners: [String]) {
+    searchScopes(queryString: "", options: { owners: $owners }) {
+      id {
+        scopeName
+        owner
+      }
+      description
+      componentCount
     }
-  };
-  return [getScopes, scopes, isLoading, error];
+  }
+`;
+
+export function useScopes(owners?: string[]) {
+  const { data, loading } = useDataQuery(SEARCH_SCOPES, {
+    variables: {
+      owners: owners
+    }
+  });
+
+  if (!data?.searchScopes) return [];
+
+  return data.searchScopes.map((plainDescriptor: any) => {
+    return ScopeDescriptor.fromObject(plainDescriptor);
+  });
 };
