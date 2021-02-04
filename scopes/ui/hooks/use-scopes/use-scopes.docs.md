@@ -11,11 +11,7 @@ How to use:
 
 ```js live
 () => {
-  const [getScopes, scopes, isLoading, error] = useScopes();
-
-  useEffect(() => {
-    getScopes();
-  }, []);
+  const scopes = useScopes(['teambit']);
 
   return <div>{JSON.stringify(scopes)}</div>;
 };

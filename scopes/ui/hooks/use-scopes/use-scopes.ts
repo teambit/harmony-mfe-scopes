@@ -16,7 +16,7 @@ const SEARCH_SCOPES = gql`
 `;
 
 export function useScopes(owners?: string[]) {
-  const { data, loading } = useDataQuery(SEARCH_SCOPES, {
+  const { data } = useDataQuery(SEARCH_SCOPES, {
     variables: {
       owners: owners
     }

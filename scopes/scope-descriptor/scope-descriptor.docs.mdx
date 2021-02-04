@@ -1,0 +1,23 @@
+---
+description: A simple scope descriptor. 
+labels: ['scope', 'bit']
+---
+
+import { ScopeDescriptor } from './scope-descriptor';
+
+## Create a simple scope descriptor.
+
+```tsx live
+() => {
+  const descriptor = ScopeDescriptor.fromObject({
+    id: {
+      owner: 'teambit',
+      scopeName: 'react'
+    },
+    componentCount: 100,
+    description: 'a very simple react scope'
+  });
+
+  return <div>{JSON.stringify(descriptor.toObject())}</div>;
+}
+```
