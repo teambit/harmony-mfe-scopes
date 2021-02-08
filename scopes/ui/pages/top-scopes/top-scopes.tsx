@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { LoaderRibbon } from '@teambit/base-ui.loaders.loader-ribbon';
 import { Error } from '@teambit/base-ui.input.error';
@@ -14,6 +14,7 @@ const owners = ['teambit'];
 export const TopScopes = ({ className, ...rest }: TopScopesProps) => {
   const [scopes, loading, error] = useScopes(owners);
   if (!scopes?.length) return <LoaderRibbon active={loading} />;
+  if (error) return <Error>{error}</Error>;
 
   return (
     <div className={classNames(styles.topScopes, classNames)} {...rest}>

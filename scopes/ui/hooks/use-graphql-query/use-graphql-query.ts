@@ -25,7 +25,6 @@ export function useGqlRequest<T = any>(
         setLoading(false);
       })
       .catch((e) => {
-        console.log('e', e);
         setError(e);
         setLoading(false);
       });
