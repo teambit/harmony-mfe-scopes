@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from 'react';
-import { request } from 'graphql-request';
+import { GraphQLClient } from 'graphql-request';
 import { gqlContext } from '@harmony-mfe/scopes.ui.graphql-context';
 
 export type UseGqlRequestProps = {
@@ -8,18 +8,21 @@ export type UseGqlRequestProps = {
 
 export function useGqlRequest<T = any>(
   query: string,
-  { variables }: UseGqlRequestProps
+  { variables }: UseGqlRequestProps,
+  method?: string
 ) {
   const [data, setData] = useState<T | undefined>(undefined);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(undefined);
 
   const server = useContext(gqlContext);
+  const client = new GraphQLClient(server, { method });
 
   useEffect(() => {
     setLoading(true);
 
-    request(server, query, variables)
+    client
+      .request(query, variables)
       .then((result: T) => {
         setData(result);
         setLoading(false);

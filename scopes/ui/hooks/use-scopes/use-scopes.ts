@@ -23,9 +23,13 @@ export function useScopes(owners?: string[]) {
     }),
     [owners]
   );
-  const { data, loading, error } = useGqlRequest(SEARCH_SCOPES, {
-    variables,
-  });
+  const { data, loading, error } = useGqlRequest(
+    SEARCH_SCOPES,
+    {
+      variables,
+    },
+    'POST'
+  );
 
   if (!data?.searchScopes) return [undefined, loading, error];
 
