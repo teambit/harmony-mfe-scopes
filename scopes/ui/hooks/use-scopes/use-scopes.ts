@@ -1,6 +1,7 @@
-import { useDataQuery } from '@teambit/ui';
+import { useMemo } from 'react';
 import { ScopeDescriptor } from '@harmony-mfe/scopes.scope-descriptor';
-import gql from 'graphql-tag';
+import { useGqlRequest } from '@harmony-mfe/scopes.ui.hooks.use-graphql-query';
+import { gql } from 'graphql-request';
 
 const SEARCH_SCOPES = gql`
   query SearchScopes($owners: [String]) {
@@ -16,15 +17,20 @@ const SEARCH_SCOPES = gql`
 `;
 
 export function useScopes(owners?: string[]) {
-  const { data } = useDataQuery(SEARCH_SCOPES, {
-    variables: {
-      owners: owners
-    }
+  const variables = useMemo(
+    () => ({
+      owners,
+    }),
+    [owners]
+  );
+  const { data, loading, error } = useGqlRequest(SEARCH_SCOPES, {
+    variables,
   });
 
-  if (!data?.searchScopes) return [];
+  if (!data?.searchScopes) return [undefined, loading, error];
 
-  return data.searchScopes.map((plainDescriptor: any) => {
+  const scopes = data.searchScopes.map((plainDescriptor: any) => {
     return ScopeDescriptor.fromObject(plainDescriptor);
   });
-};
+  return [scopes, loading, error];
+}

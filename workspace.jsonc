@@ -51,6 +51,7 @@
         "@types/react": "16.9.43",
         "@types/react-dom": "16.9.10",
         "classnames": "2.2.6",
+        "graphql-request": "3.4.0",
         "graphql-tag": "2.11.0",
         "jest": "26.6.3",
         "reset-css": "5.0.1"
@@ -86,6 +87,10 @@
     "{ui/*}": {
       "propagate": false,
       "harmony-mfe.scopes/envs/mfe-react": {}
+    },
+    "{ui/graphql-context}": {
+      "propagate": false,
+      "teambit.react/react": {}
     },
     /**
      * configure directories in the workspace root directory to different remote scopes.

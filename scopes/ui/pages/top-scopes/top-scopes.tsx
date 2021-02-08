@@ -9,10 +9,11 @@ import { useScopes } from '@harmony-mfe/scopes.ui.hooks.use-scopes';
 import styles from './top-scopes.module.scss';
 
 export type TopScopesProps = {} & React.HTMLAttributes<HTMLDivElement>;
+const owners = ['teambit'];
 
 export const TopScopes = ({ className, ...rest }: TopScopesProps) => {
-  const scopes = useScopes(['teambit']);
-  if (!scopes.length) return <LoaderRibbon active={true} />
+  const [scopes, loading, error] = useScopes(owners);
+  if (!scopes?.length) return <LoaderRibbon active={loading} />;
 
   return (
     <div className={classNames(styles.topScopes, classNames)} {...rest}>
