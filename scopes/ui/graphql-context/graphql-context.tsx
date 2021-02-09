@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 
-export const gqlContext = createContext('');
+export const gqlContext = createContext('https://symphony.bit.dev/graphql');
 
 export type GqlProviderProps = {
   /**
