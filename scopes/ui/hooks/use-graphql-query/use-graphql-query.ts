@@ -16,6 +16,7 @@ export function useGqlRequest<T = any>(
   const [error, setError] = useState(undefined);
 
   const server = useContext(gqlContext);
+  console.log('server', server);
   const client = new GraphQLClient(server, { method });
 
   useEffect(() => {

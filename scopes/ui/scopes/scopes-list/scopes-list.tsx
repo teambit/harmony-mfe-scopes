@@ -15,17 +15,14 @@ export const ScopeList = ({ list, className, ...rest }: ScopeListProps) => {
   return (
     <div className={classNames(styles.scopeList, className)} {...rest}>
       {list.length > 0 &&
-        list.map((scope, index) => {
-          console.log('scope', scope);
-          return (
-            <ScopeCard
-              key={index}
-              name={scope.id.toString()}
-              description={scope.description}
-              amount={scope.componentCount.toString()}
-            />
-          );
-        })}
+        list.map((scope, index) => (
+          <ScopeCard
+            key={index}
+            name={scope.id.toString()}
+            description={scope.description}
+            amount={scope.componentCount.toString()}
+          />
+        ))}
     </div>
   );
 };
