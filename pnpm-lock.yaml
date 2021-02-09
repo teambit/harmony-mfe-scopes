@@ -7,6 +7,7 @@ importers:
       '@teambit/base-ui.loaders.loader-ribbon': registry.npmjs.org/@teambit/base-ui.loaders.loader-ribbon/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.surfaces.card': registry.npmjs.org/@teambit/base-ui.surfaces.card/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.text.heading': registry.npmjs.org/@teambit/base-ui.text.heading/0.6.3_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.text.muted-text': registry.npmjs.org/@teambit/base-ui.text.muted-text/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.text.paragraph': registry.npmjs.org/@teambit/base-ui.text.paragraph/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.fonts.roboto': registry.npmjs.org/@teambit/base-ui.theme.fonts.roboto/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.theme.theme-provider': registry.npmjs.org/@teambit/base-ui.theme.theme-provider/0.6.3_react-dom@16.14.0+react@16.14.0
@@ -36,6 +37,7 @@ importers:
       '@teambit/base-ui.loaders.loader-ribbon': 0.6.3
       '@teambit/base-ui.surfaces.card': 0.6.3
       '@teambit/base-ui.text.heading': 0.6.3
+      '@teambit/base-ui.text.muted-text': 0.6.3
       '@teambit/base-ui.text.paragraph': 0.6.3
       '@teambit/base-ui.theme.fonts.roboto': 0.6.3
       '@teambit/base-ui.theme.theme-provider': 0.6.3
@@ -960,6 +962,22 @@ packages:
       integrity: sha512-8K33eFxPTFDCmOe6mpgQCiDVJpMQQo2F/K9BoKMI5sglPCNi8Io4/w6o1BhpLyFfvmihui4M/dARGJLsLBWJNA==
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@teambit/base-ui.text.heading/-/base-ui.text.heading-0.6.3.tgz
+    version: 0.6.3
+  registry.npmjs.org/@teambit/base-ui.text.muted-text/0.6.3_react-dom@16.14.0+react@16.14.0:
+    dependencies:
+      classnames: registry.npmjs.org/classnames/2.2.6
+      react: registry.npmjs.org/react/16.14.0
+      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
+    dev: false
+    id: registry.npmjs.org/@teambit/base-ui.text.muted-text/0.6.3
+    name: '@teambit/base-ui.text.muted-text'
+    peerDependencies:
+      react: ^16.13.1
+      react-dom: ^16.13.1
+    resolution:
+      integrity: sha512-bzwJ0rck5uyI9yUbpX2EPyHNKLRjR7rIDPhaJ/aQfE1fRtWOUFc5kOPtNU/+6PhgJu3b2lY39B9EtouIt2nm2Q==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@teambit/base-ui.text.muted-text/-/base-ui.text.muted-text-0.6.3.tgz
     version: 0.6.3
   registry.npmjs.org/@teambit/base-ui.text.paragraph/0.6.3_react-dom@16.14.0+react@16.14.0:
     dependencies:

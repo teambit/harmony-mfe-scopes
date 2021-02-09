@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -41,6 +41,7 @@
         "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
         "@teambit/base-ui.surfaces.card": "0.6.3",
         "@teambit/base-ui.text.heading": "0.6.3",
+        "@teambit/base-ui.text.muted-text": "0.6.3",
         "@teambit/base-ui.text.paragraph": "0.6.3",
         "@teambit/base-ui.theme.fonts.roboto": "0.6.3",
         "@teambit/base-ui.theme.theme-provider": "0.6.3",
@@ -63,7 +64,9 @@
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": ["**/*.spec.ts"],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
     "strictPeerDependencies": true
   },
   /**
