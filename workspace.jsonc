@@ -37,6 +37,7 @@
     "policy": {
       "dependencies": {
         "@teambit/base-ui.elements.label": "0.6.3",
+        "@teambit/base-ui.hooks.use-graphql-light": "0.0.4",
         "@teambit/base-ui.input.error": "0.6.3",
         "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
         "@teambit/base-ui.surfaces.card": "0.6.3",

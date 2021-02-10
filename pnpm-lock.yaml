@@ -3,6 +3,7 @@ importers:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.13
       '@teambit/base-ui.elements.label': registry.npmjs.org/@teambit/base-ui.elements.label/0.6.3_react-dom@16.14.0+react@16.14.0
+      '@teambit/base-ui.hooks.use-graphql-light': registry.npmjs.org/@teambit/base-ui.hooks.use-graphql-light/0.0.4_6ea6cfff5deae9e87f816e1f53de863f
       '@teambit/base-ui.input.error': registry.npmjs.org/@teambit/base-ui.input.error/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.loaders.loader-ribbon': registry.npmjs.org/@teambit/base-ui.loaders.loader-ribbon/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/base-ui.surfaces.card': registry.npmjs.org/@teambit/base-ui.surfaces.card/0.6.3_react-dom@16.14.0+react@16.14.0
@@ -33,6 +34,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7.12.13
       '@teambit/base-ui.elements.label': 0.6.3
+      '@teambit/base-ui.hooks.use-graphql-light': 0.0.4
       '@teambit/base-ui.input.error': 0.6.3
       '@teambit/base-ui.loaders.loader-ribbon': 0.6.3
       '@teambit/base-ui.surfaces.card': 0.6.3
@@ -882,6 +884,25 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@teambit/base-ui.elements.label/-/base-ui.elements.label-0.6.3.tgz
     version: 0.6.3
+  registry.npmjs.org/@teambit/base-ui.hooks.use-graphql-light/0.0.4_6ea6cfff5deae9e87f816e1f53de863f:
+    dependencies:
+      graphql: registry.npmjs.org/graphql/14.7.0
+      graphql-request: registry.npmjs.org/graphql-request/3.4.0_graphql@14.7.0
+      react: registry.npmjs.org/react/16.14.0
+      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
+      use-deep-compare: registry.npmjs.org/use-deep-compare/1.1.0_react@16.14.0
+    dev: false
+    id: registry.npmjs.org/@teambit/base-ui.hooks.use-graphql-light/0.0.4
+    name: '@teambit/base-ui.hooks.use-graphql-light'
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0
+      react: ^16.13.1
+      react-dom: ^16.13.1
+    resolution:
+      integrity: sha512-XN7l0nJLDD6IpoI6yzIZcs2amV01BAv34XGJ6XV6p0be1UDWJdxyZePtHSFJqxaYJVofreP0mzssQxrhk4j9qA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@teambit/base-ui.hooks.use-graphql-light/-/base-ui.hooks.use-graphql-light-0.0.4.tgz
+    version: 0.0.4
   registry.npmjs.org/@teambit/base-ui.input.error/0.6.3_react-dom@16.14.0+react@16.14.0:
     dependencies:
       classnames: registry.npmjs.org/classnames/2.2.6
@@ -2469,6 +2490,16 @@ packages:
       integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz
+    version: 1.0.0
+  registry.npmjs.org/dequal/1.0.0:
+    dev: false
+    engines:
+      node: '>=6'
+    name: dequal
+    resolution:
+      integrity: sha512-/Nd1EQbQbI9UbSHrMiKZjFLrXSnU328iQdZKPQf78XQI6C+gutkFUeoHpG5J08Ioa6HeRbRNFpSIclh1xyG0mw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/dequal/-/dequal-1.0.0.tgz
     version: 1.0.0
   registry.npmjs.org/detect-newline/3.1.0:
     dev: false
@@ -6446,6 +6477,20 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/urix/-/urix-0.1.0.tgz
     version: 0.1.0
+  registry.npmjs.org/use-deep-compare/1.1.0_react@16.14.0:
+    dependencies:
+      dequal: registry.npmjs.org/dequal/1.0.0
+      react: registry.npmjs.org/react/16.14.0
+    dev: false
+    id: registry.npmjs.org/use-deep-compare/1.1.0
+    name: use-deep-compare
+    peerDependencies:
+      react: '>=16.8.0'
+    resolution:
+      integrity: sha512-6yY3zmKNCJ1jjIivfZMZMReZjr8e6iC6Uqtp701jvWJ6ejC/usXD+JjmslZDPJQgX8P4B1Oi5XSLHkOLeYSJsA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/use-deep-compare/-/use-deep-compare-1.1.0.tgz
+    version: 1.1.0
   registry.npmjs.org/use/3.1.1:
     dev: false
     engines:
