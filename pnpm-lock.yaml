@@ -14,6 +14,7 @@ importers:
       '@teambit/base-ui.theme.theme-provider': registry.npmjs.org/@teambit/base-ui.theme.theme-provider/0.6.3_react-dom@16.14.0+react@16.14.0
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.2.11
       '@teambit/scopes.scope-descriptor': 0.0.5
+      '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
       '@types/react-dom': registry.npmjs.org/@types/react-dom/16.9.10
       classnames: registry.npmjs.org/classnames/2.2.6
       core-js: registry.npmjs.org/core-js/3.8.3
@@ -26,7 +27,6 @@ importers:
       reset-css: registry.npmjs.org/reset-css/5.0.1
     devDependencies:
       '@testing-library/react': registry.npmjs.org/@testing-library/react/10.4.9_react-dom@16.14.0+react@16.14.0
-      '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/node': registry.npmjs.org/@types/node/12.19.16
       '@types/react': registry.npmjs.org/@types/react/16.9.43
@@ -1284,7 +1284,7 @@ packages:
       tarball: https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.11.0.tgz
     version: 7.11.0
   registry.npmjs.org/@types/classnames/2.2.11:
-    dev: true
+    dev: false
     name: '@types/classnames'
     resolution:
       integrity: sha512-2koNhpWm3DgWRp5tpkiJ8JGc1xTn2q0l+jUNUE7oMKXUf5NpI9AIdC4kbjGNFBdHtcxBD18LAksoudAVhFKCjw==
