@@ -1,10 +1,9 @@
 import React, { ReactNode } from 'react';
 import { PreviewRuntime } from '@teambit/preview';
 import { ReactAspect, ReactPreview } from '@teambit/react';
-import { SymphonyReactConfig, SymphonyReactAspect } from './mfe-react.aspect';
-import { ThemeContext } from '@harmony-mfe/design.theme-context';
-// import { GqlProvider } from '@harmony-mfe/scopes.ui.graphql-context';
 import { GqlServerProvider } from '@teambit/base-ui.hooks.use-graphql-light';
+import { ThemeContext } from '@harmony-mfe/design.theme-context';
+import { SymphonyReactConfig, SymphonyReactAspect } from './mfe-react.aspect';
 
 export class SymphonyReactPreview {
   constructor(private config: SymphonyReactConfig) {}
@@ -30,9 +29,6 @@ export class SymphonyReactPreview {
           <GqlServerProvider value={config.symphonyGatewayUrl}>
             {children}
           </GqlServerProvider>
-          // <GqlProvider value={config.symphonyGatewayUrl}>
-          //   {children}
-          // </GqlProvider>
         );
       },
       ThemeContext,

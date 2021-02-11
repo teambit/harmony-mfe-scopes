@@ -1,1 +1,1 @@
-export * from './use-scopes';
+export { useScopes } from './use-scopes';
