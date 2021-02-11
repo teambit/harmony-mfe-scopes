@@ -4,9 +4,7 @@ import { ReactAspect, ReactMain } from '@teambit/react';
 import { SymphonyReactAspect } from './mfe-react.aspect';
 
 export class SymphonyReactMain {
-  constructor(
-    private react: ReactMain
-  ) {}
+  constructor(private react: ReactMain) {}
 
   /**
    * override the tsconfig.
@@ -20,7 +18,16 @@ export class SymphonyReactMain {
   static dependencies = [ReactAspect, EnvsAspect];
 
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
-    const symphonyReactEnv = envs.compose(react.reactEnv, []);
+    const symphonyReactEnv = envs.compose(react.reactEnv, [
+      react.overrideDependencies({
+        dependencies: {
+          '@teambit/base-ui.hooks.use-graphql-light': {
+            version: '0.0.4',
+            resolveFromEnv: true,
+          },
+        },
+      }),
+    ]);
     envs.registerEnv(symphonyReactEnv);
     return new SymphonyReactMain(react);
   }

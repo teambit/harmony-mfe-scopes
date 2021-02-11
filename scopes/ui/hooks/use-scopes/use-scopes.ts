@@ -19,10 +19,10 @@ export function useScopes(owners: string[]) {
   const variables = {
     owners,
   };
-  const server = 'https://symphony.bit.dev/graphql';
+  // const server = 'https://symphony.bit.dev/graphql';
   const { data, loading, error } = useGqlRequest(SEARCH_SCOPES, {
     variables,
-    server,
+    // server,
   });
 
   if (!data?.searchScopes) return [undefined, loading, error];
