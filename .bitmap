@@ -10,5 +10,5 @@
   "harmony-mfe.scopes/ui/scopes/scopes-list@0.0.1": {"mainFile":"index.ts","rootDir":"scopes/ui/scopes/scopes-list"},
   "harmony-mfe.scopes/ui/top-scopes/header@0.0.1": {"mainFile":"index.ts","rootDir":"scopes/ui/top-scopes/header"},
   "harmony-mfe.toolbox/string/capitalize@0.0.1": {"mainFile":"index.ts","rootDir":"toolbox/string/capitalize"},
-  "version": "14.8.9-dev.290"
+  "version": "14.8.9-dev.291"
 }
